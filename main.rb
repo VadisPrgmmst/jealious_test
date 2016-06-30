@@ -3,8 +3,8 @@
 require_relative "test"
 require_relative "test_result_printer"
 
-test = Test.new
-test_result_printer = TestResultPrinter.new
+test = Test.new("/data/questions.txt")
+test_result_printer = TestResultPrinter.new("/data/results.txt")
 
 # первый аргумент командной строки - имя пользователя, проходящего тест или "-v"
 name = ARGV[0]

@@ -4,10 +4,10 @@ class TestResultPrinter
 
   attr_accessor :results
 
-  def initialize
+  def initialize(results_file_name)
     current_path = File.dirname(__FILE__)
-    abort "Файл не найден" unless File.exist?(current_path + "/data/results.txt")
-    @results = File.readlines(current_path + "/data/results.txt")
+    abort "Файл не найден" unless File.exist?(current_path + results_file_name)
+    @results = File.readlines(current_path + results_file_name)
   end
 
   def print_result(test, name)
