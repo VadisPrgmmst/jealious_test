@@ -10,7 +10,7 @@
 
 Склонируйте репозиторий в удобное для вас место:
 
-    $ git clone https://github.com/VadisPrgmmst/magic_ball.git
+    $ git clone https://github.com/VadisPrgmmst/jealious_test.git
 
 Для того чтобы запустить программу, в терминале перейдите в папку где лежит программа и введите:
 
