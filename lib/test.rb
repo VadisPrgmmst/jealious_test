@@ -2,14 +2,11 @@
 
 class Test
 
-  attr_accessor :yes_answers_count, :version
+  attr_accessor :yes_answers_count
 
-  def initialize(questions_file_name)
-    current_path = File.dirname(__FILE__)
-    abort "Файл не найден" unless File.exist?(current_path + questions_file_name)
-    @questions = File.readlines(current_path + questions_file_name)
+  def initialize(file_path)
+    @questions = File.readlines(file_path)
     @yes_answers_count = 0
-    @version = "Тест \"Ревнивы ли вы\". Версия 0.4. (c) 2016 Vadim Galkin\n\n"
   end
 
   def pass_test
